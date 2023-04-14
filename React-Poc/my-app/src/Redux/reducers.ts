@@ -10,8 +10,12 @@ const initialState = {
 const RestaurantReducer = (state:any = initialState,action:any) => {
 
     switch(action.type){
-        case: GET_DATA 
+        case GET_DATA :
         return [...state, action.data]
+        default:
+        return state
     }
 
 }
+
+export default RestaurantReducer;
